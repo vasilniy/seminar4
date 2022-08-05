@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 
-int xa = 70, ya = 1;
+int xa = 40, ya = 1;
 int xb = 1, yb = 30;
 int xc = 80, yc = 30;
 
@@ -17,7 +17,7 @@ int x = xa, y = ya;
 
 int count = 0;
 
-while (count < 100000)
+while (count < 40000)
 {
     int what = new Random().Next(0, 3);
     if (what == 0)
@@ -39,7 +39,7 @@ while (count < 100000)
     }
 
     Console.SetCursorPosition(x, y);
-    Console.WriteLine("+");
+    Console.WriteLine("Ж");
     count = count + 1;
 }
 Console.SetCursorPosition(1, 31);
