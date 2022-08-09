@@ -51,3 +51,24 @@ Console.WriteLine($"Новая версия это: {biggestDigit}");
 // два числа и выводить, является ли второе число кратным первому.
 // Если второе число не кратно числу первому, то программа выводит
 // остаток от деления.
+
+void IsDivisionable(int num1, int num2)
+{
+    if (num2 % num1 == 0)
+    {
+        Console.WriteLine("${num2} кратно {num1}");
+    }
+    else
+    {
+        Console.WriteLine("${num2} не кратно {num1}. А остаток от деления = {num2 % num1}");
+    }
+}
+
+Console.Write("Введите первое число: ");
+int n1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите воторое число: ");
+int n2 = Convert.ToInt32(Console.ReadLine());
+
+
+IsDivisionable(n1, n2);
