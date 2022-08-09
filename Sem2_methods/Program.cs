@@ -51,7 +51,7 @@ Console.WriteLine($"Новая версия это: {biggestDigit}");
 // два числа и выводить, является ли второе число кратным первому.
 // Если второе число не кратно числу первому, то программа выводит
 // остаток от деления.
-
+/*
 void IsDivisionable(int num1, int num2)
 {
     if (num2 % num1 == 0)
@@ -72,3 +72,23 @@ int n2 = Convert.ToInt32(Console.ReadLine());
 
 
 IsDivisionable(n1, n2);
+*/
+
+// Задача 4. Напишите программу, которая принимает на вход число
+// и проверяет, кратно ли оно одновременно 7 и 23.
+
+bool IsDivis(int number)
+{
+    return number % 7 == 0 && number % 23 == 0; // можно такую запись, покороче
+    /*if (number % 7 == 0 && number % 23 == 0)
+        return true;
+    else
+        return false;*/
+}
+
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+bool isDivision = IsDivis(n);
+Console.WriteLine(isDivision);
+
