@@ -58,16 +58,6 @@ if (pos == -1)
 else
 {Console.WriteLine(pos);}
 
-
-
-
-
-
-
-
-
-
-
 /*
 while (index < n)
 {
