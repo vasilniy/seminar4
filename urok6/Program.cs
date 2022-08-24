@@ -108,3 +108,18 @@ Fibonachchi(n, a, b);
 // Задача 4. Напишите программу, которая будет преобразовывать
 // десятичное число в двоичное.
 
+void DecimalToBinary(int number)
+{
+    string result = String.Empty;
+    while (number > 0)
+    {        
+        result = number % 2 + result;        
+        number /= 2;
+    }
+    Console.WriteLine(result);
+}
+
+Console.Write("Введи число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.Write($"Число {num} в двоичной: ");
+DecimalToBinary(num);
